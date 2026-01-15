@@ -11,18 +11,6 @@ menuToggle.onclick = () => {
   }
 };
 
-function informacion(button) {
-  let info = button.parentElement.querySelector(".display");
-
-  // toggle devuelve true si añade la clase, false si la quita
-  let oculto = info.classList.toggle("hidden");
-
-  if (oculto) {
-    button.textContent = "+ Info"; // cuando está oculto
-  } else {
-    button.textContent = "- Info"; // cuando está visible
-  }
-}
 /* Carrusel */
 var imagenArray, indice, siguiente, anterior;
 indice = 0;

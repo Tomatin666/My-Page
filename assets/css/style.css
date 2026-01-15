@@ -75,41 +75,44 @@ ul {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     color: white;
-    background-color: #8d7bb7;
     transition: all 0.3s ease-in-out;
+}
+
+.boton2:hover {
+    color: #B3826C;
+    border: 1px solid #B3826C;
 }
 
 .boton__link {
     text-decoration: none;
     text-decoration-color: var(--color1);
-    border: 1px solid var(--color1);
     border-radius: 8px;
     padding: 10px 15px;
     font-size: 1rem;
-    font-style: italic;
+    font-weight: bold;
     color: white;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #B3826C;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
 .boton__link:hover {
-    background-color: var(--color2);
+    color: #B3826C;
+    background-color: #69574e;
 }
 
-.boton,
-.boton2:hover {
+.boton:hover {
     background-color: var(--color2)
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+    max-width: 95%;
+    height: 200px;
     border-radius: 8px;
-    border: 1px solid #CCC;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -170,6 +173,11 @@ header {
     align-items: center;
 }
 
+.menu-toggle {
+    background-color: var(--color2);
+    border-radius: 8px;
+}
+
 .main-nav.show {
     display: none;
 }
@@ -182,7 +190,7 @@ header {
     position: absolute;
     right: 0;
     top: 92px;
-    background-color: var(--color3);
+    background-color: rgba(141, 123, 183, 0.8);
 }
 
 .main-nav ul {
@@ -281,22 +289,6 @@ header {
 .tecnologias {
     display: flex;
     flex-direction: column;
-}
-
-.display {
-    opacity: 1;
-    max-height: 200px;
-    width: 100%;
-    margin: 15px 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-}
-
-.hidden {
-    opacity: 0;
-    max-height: 0;
-    pointer-events: none;
-    margin: 0 0;
 }
 
 .card:first-child {
@@ -504,22 +496,20 @@ footer .container {
         margin-top: 0;
     }
 
-    #tech .display {
-        display: block;
-    }
-
     #tech .card {
         display: flex;
         flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-around;
-        align-items: center;
-        height: 500px;
+        justify-content: center;
+        height: 450px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
 
     .tecnologias {
         flex-direction: row;
+    }
+
+    .img-fluid {
+        height: 600px;
     }
 
     /* animanga */
